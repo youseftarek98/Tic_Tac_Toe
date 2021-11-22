@@ -5,14 +5,14 @@ class Player {
 }
 
 class Game {
-  static const boardlenth = 9; // we will creare a board of 3*3 blocks;
+  static const boardLength = 9; // we will create a board of 3*3 blocks;
   static const blocSize = 100.0;
 
   //Creating the empty board
   List<String>? board;
 
   static List<String>? initGameBoard() =>
-      List.generate(boardlenth, (index) => Player.empty);
+      List.generate(boardLength, (index) => Player.empty);
 
   //now we need to build the winner check algorithm
   //for this we need first to declare a scoreboard in our main file
